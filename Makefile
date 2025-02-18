@@ -25,12 +25,12 @@ JVM_AGENT_FILE_NAME=chaosblade-java-agent-$(BLADE_VERSION).jar
 # oss url
 BLADE_OSS_URL=https://chaosblade.oss-cn-hangzhou.aliyuncs.com/agent/release
 # sandbox
-JVM_SANDBOX_VERSION=1.3.3
+JVM_SANDBOX_VERSION=1.4.1-SNAPSHOT
 JVM_SANDBOX_NAME=sandbox-$(JVM_SANDBOX_VERSION)-bin.zip
-JVM_SANDBOX_OSS_URL=https://chaosblade.oss-cn-hangzhou.aliyuncs.com/agent/github/sandbox/$(JVM_SANDBOX_NAME)
+JVM_SANDBOX_OSS_URL=https://github.com/YiqinXiong/jvm-sandbox/releases/download/v$(JVM_SANDBOX_VERSION)/$(JVM_SANDBOX_NAME)
 JVM_SANDBOX_DEST_PATH=$(BUILD_TARGET_CACHE)/$(JVM_SANDBOX_NAME)
 JVM_SANDBOX_TARGET_PATH=$(BUILD_TARGET_LIB)/sandbox
-# used to java agent attach
+# used to java agent attach (DEPRECATED from JDK 9+)
 BLADE_JAVA_TOOLS_JAR_NAME=tools.jar
 BLADE_JAVA_TOOLS_JAR_DEST_PATH=$(BUILD_TARGET_CACHE)/$(BLADE_JAVA_TOOLS_JAR_NAME)
 BLADE_JAVA_TOOLS_JAR_DOWNLOAD_URL=$(BLADE_OSS_URL)/$(BLADE_JAVA_TOOLS_JAR_NAME)
